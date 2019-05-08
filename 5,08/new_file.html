@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				height: 6000px;
+				background: linear-gradient(red,yellow);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var cline = document.body.clientHeight;
+		var Rise = 0;
+		var R = 2;
+		function scroll(){
+			if(R%2==0){
+				Rise+=300;
+				window.scrollTo('',Rise);
+				if(Rise==cline ){
+					R+=1;
+				}
+			}else{
+				Rise-=300;
+				window.scrollTo('',Rise);
+				if(Rise==0){
+					R+=1;
+				}
+			}
+		};
+		setInterval(scroll,100);
+	</script>
+</html>
