@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button class='R'>1</button>
+		<button class='R'>2<button>
+		<button class='R'>3<button>
+		<button class='R'>4<button>
+		<button class='R'>5<button>
+		<button class='R'>6<button>
+		<button class='R'>7<button>
+		<button class='R'>8<button>
+		<button class='R'>9<button>
+		<button class='R'>10<button>
+		<script type="text/javascript">
+		window.onload=function(){
+				var R=document.getElementsByClassName('R');
+				
+				
+				for (var i=0;i<R.length;i++) {
+					R[i].onclick=function(){
+									alert(this.innerText);
+								}
+				}
+				}
+	</script>
+	</body>
+</html>
