@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+        <style type="text/css" >
+
+            *{
+                margin: 0;
+                padding: 0;
+
+            }
+
+            #a{
+
+                margin: 0 auto;
+                margin-top: 200px;
+                width: 500px;
+                height: 200px;
+                border: 1px solid gray;
+
+            }
+
+            #a li{
+                list-style: none;
+                display: block;
+                float: left;
+                width: 100px;
+                height: 30px;	
+                text-align: center;
+                line-height: 30px;
+                background-color: gainsboro;
+
+            }
+
+            #a li:hover{
+                background-color:white;
+            }
+            div{
+               position: absolute;
+                top: 230px;
+                width: 500px;
+                height: 170px;
+                display: none;
+            }
+
+            div a{
+            	text-decoration: none;
+                width: 250px;
+                height: 85px;
+                color: #909090;
+                float: left;
+                text-align: center;
+                line-height: 85px;
+
+            }
+             div a:hover{
+            	text-decoration:  underline;
+                color: black;
+
+            }
+
+            .b{
+                display: block;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <ul id="a">
+
+            <li>公告</li>
+
+            <li>规则</li>
+
+            <li>论坛</li>
+
+            <li>安全</li>
+
+            <li>公益</li>
+
+            <div class="b">
+
+                <a href="">Epic商店解锁国区</a>
+
+                <a href="">波音4月0订单</a>
+
+                <a href="">本科生禁带手机</a>
+
+                <a href="">葫芦娃之父逝世</a>
+            </div>
+
+            <div>
+
+                <a href="">中国女排战胜波兰</a>
+
+                <a href="">北京地铁禁食规定</a>
+
+                <a href="">幼儿园风油精事件</a>
+
+            </div>
+
+            <div>
+
+                <a href="">袁咏仪伤害张智霖</a>
+
+                <a href="">新华社批评趣头条</a>
+
+                <a href="">滴滴女司机联盟</a>
+
+                <a href="">吉利回应降薪</a>
+            </div>
+
+            <div>
+
+                <a href="">中国抓住美软肋 美不淡定了！</a>
+
+                <a href="">曝费玉清演唱会出状况 被送警局</a>
+
+                <a href="">赌王4位儿媳对比：奚梦瑶最高调</a>
+
+             	<a href="">中国隐藏杀手锏 俄：损失数亿</a>
+
+            </div>
+
+            <div>
+
+                <a href="">国外艳遇之城艳遇指数高达99%</a>
+
+                <a href="">这只猫咪眼睛有毒 不要盯着看</a>
+
+                <a href="">如果地球上不存在人类 会怎样？</a>
+
+                <a href="">新娘婚礼剃光头 原因让人哭红眼</a>
+
+            </div>
+
+        </ul>
+
+<script>
+
+    var s=document.getElementsByTagName("li");
+
+    var divs=document.getElementsByTagName("div");
+
+    for(var i=0;i<s.length;i++){
+
+     s[i].onclick=function(){thea(this);}
+
+    }
+
+    function thea(obj){
+
+        for(var i=0;i<s.length;i++){
+
+            if(s[i]==obj){
+
+            divs[i].className="b";
+
+                }else{
+
+            divs[i].className="";
+            }
+        }
+    } 
+
+</script>
+
+    </body>
+
+</html>
